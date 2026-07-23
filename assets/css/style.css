@@ -162,6 +162,9 @@ section.tight{padding:72px 0;}
   width:20px; height:20px; border-radius:50%;
   background:var(--accent-soft); color:var(--accent); font-size:0.72rem;
 }
+#policy .flip-cue{color:rgba(255,255,255,0.8);}
+#policy .flip-cue-icon{background:rgba(255,255,255,0.15); color:#fff;}
+.cat-title-row .bill-section-title{margin-bottom:0;}
 
 .proj-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
 
