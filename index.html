@@ -21,7 +21,10 @@
 <header class="site-nav" id="siteNav">
   <div class="wrap">
     <a class="site-name" href="#top">Cameron Carter</a>
-    <nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="siteNavLinks">
       <a href="#planning">Planning Work</a>
       <a href="#policy">Policy and Advocacy</a>
       <a href="#resume">Resume</a>
@@ -85,33 +88,33 @@
       <p class="muted measure">From 2023–2024, I led plan development as Senior Planner, writing each plan start to finish, on a team that included a Project Manager, GIS Analyst, Junior Planner, graphic designer, and community engagement support. When our Project Manager left in 2025, I took on that role as well, now serving as both Senior Planner and Project Manager.</p>
 
       <div class="cat-block cat-green">
-        <div class="cat-title-row">
-          <div class="cat-title">Active Transportation Plans</div>
-          <div class="flip-cue"><span class="flip-cue-icon">↻</span> Click for details and the full plan</div>
-        </div>
+        <div class="cat-title">Active Transportation Plans</div>
         <p class="cat-desc">Active transportation connections and improvements — street networks, bike paths, sidewalks, and supporting infrastructure. Each plan includes community engagement (open houses, online surveys, stakeholder and intercept interviews), GIS analysis, specific facility recommendations, cost estimates, implementation strategies, and funding opportunities.</p>
         <div class="proj-grid">
-          <div class="proj-card flip-card" onclick="flipCard(this)">
-            <div class="proj-card-inner">
-              <div class="proj-face proj-front">
-                <img class="proj-photo" src="assets/img/plan-uvu-main.jpg" alt="UVU Active Transportation Plan cover">
-                <span class="flip-hint">↻</span>
-                <div class="proj-front-body">
-                  <div class="proj-name">Utah Valley University ATP</div>
-                  <div class="proj-meta">Mountainland Association of Governments · 2025</div>
-                  <div class="proj-tags"><span class="role-tag">Prime Consultant</span></div>
+          <div class="proj-card-callout-wrap">
+            <div class="card-callout"><span class="card-callout-icon">↻</span> Click for details and the full plan</div>
+            <div class="proj-card flip-card" onclick="flipCard(this)">
+              <div class="proj-card-inner">
+                <div class="proj-face proj-front">
+                  <img class="proj-photo" src="assets/img/plan-uvu-main.jpg" alt="UVU Active Transportation Plan cover">
+                  <span class="flip-hint">↻</span>
+                  <div class="proj-front-body">
+                    <div class="proj-name">Utah Valley University ATP</div>
+                    <div class="proj-meta">Mountainland Association of Governments · 2025</div>
+                    <div class="proj-tags"><span class="role-tag">Prime Consultant</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="proj-face proj-back">
-                <img src="assets/img/plan-uvu-secondary.jpg" alt="UVU Active Transportation Plan map">
-                <div class="proj-back-body">
-                  <ul class="proj-desc-list">
-                    <li>Campus-wide Active Transportation Plan linking UVU, surrounding neighborhoods, and regional transit</li>
-                    <li>Evaluates walking and biking conditions on campus and across the network</li>
-                    <li>Identifies major barriers to active commuting</li>
-                    <li>Infrastructure and program strategies for students, faculty, staff, and visitors</li>
-                  </ul>
-                  <a class="proj-link" href="plans/uvu.html" onclick="event.stopPropagation();">View Full Plan →</a>
+                <div class="proj-face proj-back">
+                  <img src="assets/img/plan-uvu-secondary.jpg" alt="UVU Active Transportation Plan map">
+                  <div class="proj-back-body">
+                    <ul class="proj-desc-list">
+                      <li>Campus-wide Active Transportation Plan linking UVU, surrounding neighborhoods, and regional transit</li>
+                      <li>Evaluates walking and biking conditions on campus and across the network</li>
+                      <li>Identifies major barriers to active commuting</li>
+                      <li>Infrastructure and program strategies for students, faculty, staff, and visitors</li>
+                    </ul>
+                    <a class="proj-link" href="plans/uvu.html" onclick="event.stopPropagation();">View Full Plan →</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -225,10 +228,7 @@
       </div>
 
       <div class="cat-block cat-rust">
-        <div class="cat-title-row">
-          <div class="cat-title">Trails, Recreation, and Wayfinding</div>
-          <div class="flip-cue"><span class="flip-cue-icon">↻</span> Click for details and the full plan</div>
-        </div>
+        <div class="cat-title">Trails, Recreation, and Wayfinding</div>
         <p class="cat-desc">A mix of paved and soft-surface recreational facilities, wayfinding signage design and placement, and park amenities like playgrounds and boat launches, supported by cost-benefit analysis and route alignment studies.</p>
         <div class="proj-grid">
           <div class="proj-card flip-card" onclick="flipCard(this)">
@@ -385,10 +385,7 @@
       </div>
 
       <div class="cat-block cat-blue">
-        <div class="cat-title-row">
-          <div class="cat-title">Zoning, Ordinances, and Design Standards</div>
-          <div class="flip-cue"><span class="flip-cue-icon">↻</span> Click for details and the full plan</div>
-        </div>
+        <div class="cat-title">Zoning, Ordinances, and Design Standards</div>
         <p class="cat-desc">More policy than planning: zoning code, model ordinances, and development and design standards that support walkability and mixed-use development.</p>
         <div class="proj-grid">
           <div class="proj-card flip-card" onclick="flipCard(this)">
@@ -469,10 +466,7 @@
       </div>
 
       <div class="cat-block cat-gold">
-        <div class="cat-title-row">
-          <div class="cat-title">Growth and Population Modeling</div>
-          <div class="flip-cue"><span class="flip-cue-icon">↻</span> Click for details and the full plan</div>
-        </div>
+        <div class="cat-title">Growth and Population Modeling</div>
         <p class="cat-desc">Heavily GIS-based: data analysis and modeling across growth scenarios to project long-term impacts.</p>
         <div class="proj-grid">
           <div class="proj-card flip-card" onclick="flipCard(this)">
@@ -513,10 +507,7 @@
       <p class="muted measure">As Bike Utah's Policy Analyst, I regularly consult with state legislators and committee staff on bike and pedestrian bills — drafting legislation, providing public comment, and negotiating directly with state agencies and lawmakers. I also represent Bike Utah in federal advocacy on Capitol Hill.</p>
 
       <div class="bill-section bill-section-enacted">
-        <div class="cat-title-row">
-          <div class="bill-section-title">Enacted Bills</div>
-          <div class="flip-cue"><span class="flip-cue-icon">↻</span> Click to see my role</div>
-        </div>
+        <div class="bill-section-title">Enacted Bills</div>
         <div class="bill-grid">
 
           <div class="bill-card flip-card" onclick="flipCard(this)">
@@ -658,8 +649,8 @@
         </div>
       </div>
 
-      <div class="oped-divider"></div>
-      <div class="section-kicker">Op-Eds</div>
+      <div class="bill-section bill-section-oped">
+        <div class="bill-section-title">Op-Eds</div>
       <div class="oped-grid">
         <div class="oped-card">
           <img src="assets/img/oped-ebike-revolution.jpg" alt="E-bike riders on a street">
@@ -683,6 +674,7 @@
             <a class="bill-link" href="https://www.sltrib.com/opinion/commentary/2024/03/17/opinion-more-suburban-sprawl-wont/" target="_blank" rel="noopener">Read on SLTrib.com →</a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -708,11 +700,17 @@
 </footer>
 
 <script>
+  let hasFlippedOnce = false;
   function flipCard(el) {
     document.querySelectorAll('.flip-card.flipped').forEach(c => {
       if (c !== el) c.classList.remove('flipped');
     });
     el.classList.toggle('flipped');
+    if (!hasFlippedOnce) {
+      hasFlippedOnce = true;
+      const callout = document.querySelector('.card-callout');
+      if (callout) callout.classList.add('hidden');
+    }
   }
 
   const nav = document.getElementById('siteNav');
@@ -722,6 +720,19 @@
   };
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('siteNavLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
 </script>
 
 </body>
